@@ -162,3 +162,18 @@ or simply use it directly from the source (pyinstaller.py).
 .. _PyCrypto: https://www.dlitz.net/software/pycrypto/
 .. _`manual`: https://pyinstaller.rtfd.org/en/latest/
 
+Build for ARM Platforms
+---------------------
+git clone https://github.com/hopetechnik/pyinstaller
+cd pyinstaller/bootloader
+python waf configure --no-lsb all
+cd pyinstaller/PyInstaller/bootloader
+cp -R Linux-32bit Linux-32bit-arm
+
+cd pyinstaller
+python pyinstaller.py [path to AGVonboardUI .py file]
+
+cp -r icons/ [path to mainApp]
+cp -r images/ [path to mainApp]
+cp -r data/ [path to mainApp]
+
