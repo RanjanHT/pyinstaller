@@ -24,4 +24,4 @@ from twisted.internet import default
 
 
 # This creates module: sys.modules['twisted.internet.reactor']
-default.install()
+#default.install()
