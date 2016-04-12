@@ -164,16 +164,16 @@ or simply use it directly from the source (pyinstaller.py).
 
 Build for ARM Platforms
 ---------------------
-git clone https://github.com/hopetechnik/pyinstaller
-cd pyinstaller/bootloader
-python waf configure --no-lsb all
-cd pyinstaller/PyInstaller/bootloader
-cp -R Linux-32bit Linux-32bit-arm
+      git clone https://github.com/hopetechnik/pyinstaller
+      cd pyinstaller/bootloader
+      python waf configure --no-lsb all
+      cd pyinstaller/PyInstaller/bootloader
+      cp -R Linux-32bit Linux-32bit-arm
 
-cd pyinstaller
-python pyinstaller.py [path to AGVonboardUI .py file]
+      cd pyinstaller
+      python pyinstaller.py [path to AGVonboardUI .py file]
 
-cp -r icons/ [path to mainApp]
-cp -r images/ [path to mainApp]
-cp -r data/ [path to mainApp]
+      cp -r icons/ [path to mainApp]
+      cp -r images/ [path to mainApp]
+      cp -r data/ [path to mainApp]
 
